@@ -1,0 +1,11 @@
+<p>login works!</p>
+
+<label>Id:</label><input [(ngModel)]="userId" type="text">
+<p *ngIf="useridLengthFlag">User id must be atleast 8 characters</p>
+<br>
+<br>
+<label>Password:</label><input [(ngModel)]="userPassword" type="password">
+<p *ngIf="passwordLengthFlag">Password must be atleast 8 characters</p>
+<br>
+<br>
+<button (click)="onLoginClick()">Log in!</button>
